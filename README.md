@@ -11,6 +11,8 @@ Este site mostra informações do autor, foto, dados de contato e uma seção "S
 - JavaScript
 
 ## Como usar
+Acesse diretamente por https://vinicurio.github.io/apresentacao/
+ou
 1. Abra `index.html` no navegador.
 2. Edite os textos e a imagem conforme desejar.
 
