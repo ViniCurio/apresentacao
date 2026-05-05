@@ -65,7 +65,7 @@ body::after {
   width: min(100%, 960px);
   background: linear-gradient(180deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.82));
   border: 5px solid rgba(39, 46, 58, 0.12);
-  border-radius: 28px;
+  border-radius: 50px;
   box-shadow: 0 35px 90px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
@@ -75,37 +75,43 @@ body::after {
 }
 
 .hero__grid {
-  display: grid;
-  grid-template-columns: minmax(240px, 480px) 1fr;
-  gap: 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: -15rem;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   margin-right: 3rem;
 }
 
 .photo-card {
-  width: 75%;
+  width: 40%;
   max-width: 480px;
   background: var(--surface);
-  border: 5px solid rgba(69, 103, 151, 0.12);
+  border: 3px cyan solid;
   border-radius: 50%;
+  animation: glow 1.5s infinite alternate;
   overflow: hidden;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px cyan, 0 0 10px cyan;
   align-self: start;
-  transform: translateY(3rem);
-  margin-left: -3rem;
+  transform: translateY(2rem);
+  margin-left: 38rem;
 }
+
+
 
 .photo-card img {
   width: 100%;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
 .hero__content {
+  width: 100%;
   max-width: 640px;
   text-align: left;
+  margin-top: -10rem;
 }
 
 .contact-list {
@@ -210,7 +216,8 @@ h1::before {
 }
 
 .info-list {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 2rem;
 }
@@ -231,6 +238,14 @@ h1::before {
   justify-content: center;
   width: 100%;
   margin-top: 1rem;
+}
+
+.button-topo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
 }
 
 .button {
@@ -271,8 +286,8 @@ h1::before {
 
 .cards {
   display: grid;
-  gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
 }
 
 article {
