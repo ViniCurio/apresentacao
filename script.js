@@ -5,6 +5,7 @@ aboutButton.addEventListener('click', () => {
   aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
+
 const heroSection = document.getElementById('hero');
 const topButton = document.getElementById('topButton');
 
