@@ -75,16 +75,15 @@ body::after {
 }
 
 .hero__grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: -15rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
-  margin-right: 3rem;
 }
 
 .photo-card {
-  width: 40%;
+  width: 100%;
   max-width: 480px;
   background: var(--surface);
   border: 3px cyan solid;
@@ -94,7 +93,6 @@ body::after {
   box-shadow: 0 0 5px cyan, 0 0 10px cyan;
   align-self: start;
   transform: translateY(2rem);
-  margin-left: 38rem;
 }
 
 
@@ -110,7 +108,6 @@ body::after {
   width: 100%;
   max-width: 640px;
   text-align: left;
-  margin-top: -10rem;
 }
 
 .contact-list {
@@ -319,22 +316,19 @@ article p {
   }
 
   .hero__grid {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 1rem;
-    margin-right: 0;
     align-items: center;
   }
 
   .photo-card {
     width: 60%;
     max-width: 300px;
-    margin-left: 0;
     transform: translateY(0);
-    align-self: center;
+    justify-self: center;
   }
 
   .hero__content {
-    margin-top: 0;
     text-align: center;
     max-width: none;
   }
@@ -350,7 +344,8 @@ article p {
   }
 
   .contact-list {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .about {
